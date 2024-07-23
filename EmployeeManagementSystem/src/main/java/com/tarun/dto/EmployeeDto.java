@@ -1,7 +1,5 @@
 package com.tarun.dto;
 
-import com.tarun.entity.Department;
-
 public class EmployeeDto {
 
     private Long id;
@@ -76,7 +74,7 @@ public class EmployeeDto {
         this.email = email;
     }
 
-    public Department getDepartmentId() {
+    public Long getDepartmentId() {
         return departmentId;
     }
 

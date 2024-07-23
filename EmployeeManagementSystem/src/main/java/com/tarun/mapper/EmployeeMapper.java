@@ -25,7 +25,7 @@ public class EmployeeMapper {
       employee.setFirstName(employeeDto.getFirstName());
       employee.setLastName(employeeDto.getLastName());
       employee.setEmail(employeeDto.getEmail());
-      employee.setDepartment(employeeDto.getDepartmentId());
+
 
         return employee;
     }
