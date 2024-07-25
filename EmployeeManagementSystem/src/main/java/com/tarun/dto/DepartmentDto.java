@@ -6,6 +6,9 @@ public class DepartmentDto {
     private String departmentName;
     private String departmentDescription;
 
+    public DepartmentDto() {
+    }
+
     public DepartmentDto(Long departmentId) {
         this.departmentId = departmentId;
     }

@@ -9,9 +9,9 @@ public class DepartmentMapper {
 
         return  new DepartmentDto(
 
-                department.getDepartmentId(),
-                department.getDepartmentName(),
-                department.getDescription()
+              department.getDepartmentId(),
+              department.getDepartmentName(),
+                department.getDepartmentDescription()
         );
     }
 

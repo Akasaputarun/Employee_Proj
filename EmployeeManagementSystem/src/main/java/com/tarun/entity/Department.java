@@ -13,8 +13,8 @@ public class Department {
     @Column(name = "department_name")
     private String departmentName;
 
-    @Column(name = "description")
-    private String description;
+    @Column(name = "departmentDescription")
+    private String departmentDescription;
 
     public Department() {
     }
@@ -23,15 +23,15 @@ public class Department {
         this.departmentId = departmentId;
     }
 
-    public Department(Long departmentId, String departmentName, String description) {
+    public Department(Long departmentId, String departmentName, String departmentDescription) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;
-        this.description = description;
+        this.departmentDescription = departmentDescription;
     }
 
-    public Department(String departmentName, String description) {
+    public Department(String departmentName, String departmentDescription) {
         this.departmentName = departmentName;
-        this.description = description;
+        this.departmentDescription = departmentDescription;
     }
 
     public Long getDepartmentId() {
@@ -50,11 +50,11 @@ public class Department {
         this.departmentName = departmentName;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDepartmentDescription() {
+        return departmentDescription;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDepartmentDescription(String departmentDescription) {
+        this.departmentDescription = departmentDescription;
     }
 }

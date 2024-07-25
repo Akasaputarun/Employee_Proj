@@ -9,10 +9,11 @@ public class EmployeeDto {
     private String email;
     private Long departmentId;
 
-
-
+    public EmployeeDto() {
+    }
 
     public EmployeeDto(Long id) {
+
         this.id = id;
     }
 

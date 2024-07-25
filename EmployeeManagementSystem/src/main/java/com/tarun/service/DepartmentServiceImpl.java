@@ -50,8 +50,7 @@ public class DepartmentServiceImpl implements DepartmentService {
                 .orElseThrow(() -> new ResourceNotFoundException("Department not found by id: " + id));
 
         existingDepartment.setDepartmentName(updatedDepartmentDto.getDepartmentName());
-        existingDepartment.setDescription(updatedDepartmentDto.getDepartmentDescription());
-
+        existingDepartment.setDepartmentDescription(updatedDepartmentDto.getDepartmentDescription());
         Department updatedDepartment = departmentRepository.save(existingDepartment);
         return DepartmentMapper.maptoDepartmentDto(updatedDepartment);
     }
