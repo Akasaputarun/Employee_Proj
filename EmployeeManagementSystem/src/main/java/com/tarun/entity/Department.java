@@ -23,16 +23,18 @@ public class Department {
         this.departmentId = departmentId;
     }
 
+    public Department(String departmentName, String departmentDescription) {
+        this.departmentName = departmentName;
+        this.departmentDescription = departmentDescription;
+    }
+
+
     public Department(Long departmentId, String departmentName, String departmentDescription) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;
         this.departmentDescription = departmentDescription;
     }
 
-    public Department(String departmentName, String departmentDescription) {
-        this.departmentName = departmentName;
-        this.departmentDescription = departmentDescription;
-    }
 
     public Long getDepartmentId() {
         return departmentId;
